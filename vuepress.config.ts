@@ -46,7 +46,7 @@ export default defineUserConfig({
     {
         mountPath:"/",
         analysis: githubReleasesFilesAnalysis({
-            user: "jianjianai", repository: "FList"
+            user: "zsxcoder", repository: "FList"
         }),  
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     }
