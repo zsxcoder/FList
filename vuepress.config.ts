@@ -54,7 +54,7 @@ export default defineUserConfig({
   mountPath:"/gitee-release",
   analysis:giteeReleasesFilesAnalysis({
     user:"kemiaoshiwo",
-    repository:"FList",
+    repository:"Flist",
     //direction: 'asc', //排序
     //access_token: 'xxxx', //用户token
     //page: 0, //第几页
