@@ -56,7 +56,6 @@ export default defineUserConfig({
     user:"kemiaoshiwo",
     repository:"flist",
     //direction: 'asc', //排序
-    access_token: '2a9df16793a6c557663d15f6958e59e0', //用户token
     //page: 0, //第几页
     //per_page: 100 //一页显示多少个
   })
