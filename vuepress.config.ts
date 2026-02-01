@@ -32,7 +32,7 @@ export default defineUserConfig({
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
     {
-      mountPath: "/music-1-huggingface",
+      mountPath: "/huggingface",
       analysis: huggingFaceDatasetsAnalysis({
         userName: "zsxcoder",
         datasetsName: "zsx-pan",
@@ -44,7 +44,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     {
-        mountPath:"/",
+        mountPath:"/githubrelease",
         analysis: githubReleasesFilesAnalysis({
             user: "zsxcoder", repository: "FList"
         }),  
