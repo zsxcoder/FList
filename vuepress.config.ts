@@ -44,12 +44,23 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     {
-        mountPath:"/githubrelease",
+        mountPath:"/github-release",
         analysis: githubReleasesFilesAnalysis({
             user: "zsxcoder", repository: "FList"
         }),  
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    }
+      },
+    {
+  mountPath:"/gitee-release",
+  analysis:giteeReleasesFilesAnalysis({
+    user:"kemiaoshiwo",
+    repository:"FList",
+    //direction: 'asc', //排序
+    //access_token: 'xxxx', //用户token
+    //page: 0, //第几页
+    //per_page: 100 //一页显示多少个
+  })
+}
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
